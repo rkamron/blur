@@ -8,7 +8,7 @@ from PIL import Image
 
 # hugging face model
 model_path = hf_hub_download(repo_id="arnabdhar/YOLOv8-Face-Detection", filename="model.pt")
-
+# this is comment
 # model
 model = YOLO(model_path)
 
