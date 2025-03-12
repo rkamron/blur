@@ -64,6 +64,6 @@ def cover_faces(image_path):
     cv2.imwrite("face_covered.jpg", img)
     print("Processed image saved as 'face_covered.jpg'")
 
-image_path = "/Users/daniellhs/Desktop/parkf.jpg" 
+image_path = "../data/faces&&lot/pic2.jpg" 
 cover_faces(image_path)
 

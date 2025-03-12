@@ -58,5 +58,5 @@ def cover_faces(image_path):
     print("Processed image saved as 'edit_covered.jpg'")
 
 # Example usage
-image_path = "/Users/daniellhs/Desktop/park.jpg"  # Replace with your actual image path
+image_path = "../data/faces&&lot/pic2.jpg"  # Replace with your actual image path
 cover_faces(image_path)
