@@ -22,7 +22,7 @@ def model_run(path):
 
     # Parse results
     predictions = results.pred[0]
-    print(f"\nLength: {len(predictions)} \npredictions: {predictions}\n")
+    #print(f"\nLength: {len(predictions)} \npredictions: {predictions}\n")
     boxes = predictions[:, :4]  # x1, y1, x2, y2
     scores = predictions[:, 4]
     categories = predictions[:, 5]
@@ -35,7 +35,7 @@ def model_run(path):
         
         cv2.rectangle(img, (int(box[0]), int(box[1])), (int(box[2]), int(box[3])), color, -1) # ..., 2
 
-        cv2.putText(img, label, (int(box[0]), int(box[1]) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
+        #cv2.putText(img, label, (int(box[0]), int(box[1]) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
     #display
     try:
