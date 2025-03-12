@@ -3,10 +3,10 @@ import numpy as np
 import cv2
 
 def model_run(path):
-    model = yolov5.load('keremberke/yolov5s-license-plate')
+    model = yolov5.load('keremberke/yolov5n-license-plate')
 
-    model.conf = 0.01  # NMS confidence threshold
-    model.iou = 0.05  # NMS IoU threshold
+    model.conf = 0.001  # NMS confidence threshold
+    model.iou = 0.01  # NMS IoU threshold
     model.agnostic = False  # NMS class-agnostic
     model.multi_label = False  # NMS multiple labels per box
     model.max_det = 1000  # Maximum number of detections per image
@@ -48,4 +48,4 @@ def model_run(path):
     # save new
     cv2.imwrite('result.jpg', img)
 
-model_run('../data/CNR-EXT_FULL_IMAGE_1000x750/FULL_IMAGE_1000x750/OVERCAST/2015-11-25/camera7/2015-11-25_1619.jpg')
+model_run('../data/CNR-EXT_FULL_IMAGE_1000x750/FULL_IMAGE_1000x750/OVERCAST/2015-11-25/camera7/2015-11-25_1119.jpg')
