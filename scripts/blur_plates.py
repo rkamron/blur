@@ -5,7 +5,7 @@ import cv2
 def model_run(path):
     model = yolov5.load('keremberke/yolov5n-license-plate')
 
-    model.conf = 0.001  # NMS confidence threshold
+    model.conf = 0.0005  # NMS confidence threshold
     model.iou = 0.01  # NMS IoU threshold
     model.agnostic = False  # NMS class-agnostic
     model.multi_label = False  # NMS multiple labels per box
@@ -46,6 +46,6 @@ def model_run(path):
         print(f"Displaying images is not supported in this environment: {e}")
 
     # save new
-    cv2.imwrite('result.jpg', img)
+    cv2.imwrite('../sample-results/plate-result-5.jpg', img)
 
-model_run('../data/CNR-EXT_FULL_IMAGE_1000x750/FULL_IMAGE_1000x750/OVERCAST/2015-11-25/camera7/2015-11-25_1119.jpg')
+model_run('../data/CNR-EXT_FULL_IMAGE_1000x750/FULL_IMAGE_1000x750/OVERCAST/2015-12-18/camera9/2015-12-18_1424.jpg')

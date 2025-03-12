@@ -61,9 +61,9 @@ def cover_faces(image_path):
         print(f"Displaying images is not supported in this environment: {e}")
 
     # Save the modified image
-    cv2.imwrite("face_covered.jpg", img)
-    print("Processed image saved as 'face_covered.jpg'")
+    cv2.imwrite("../sample-results/face-result-5.jpg", img)
+    #print("Processed image saved as 'face_covered.jpg'")
 
-image_path = "../data/faces&&lot/pic2.jpg" 
+image_path = "../data/faces&&lot/pic4.jpg" 
 cover_faces(image_path)
 
