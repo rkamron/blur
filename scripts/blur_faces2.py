@@ -19,7 +19,7 @@ def detect_faces(image_path):
 
     # Parse results
     results = Detections.from_ultralytics(output[0])
-    print(results)
+    #print(results)
     return results
 
 # Function to cover detected faces with a black rectangle

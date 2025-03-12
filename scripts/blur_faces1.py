@@ -23,7 +23,7 @@ def detect_faces(image_path):
     # parse results
     results = Detections.from_ultralytics(output[0])
 
-    print(results)
+    #print(results)
     return results
 
 # function to draw rectangles around each detection

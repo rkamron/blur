@@ -1,0 +1,8 @@
+huggingface_hub==0.24.0
+numpy==1.26.4
+opencv_python==4.10.0.84
+opencv_python_headless==4.10.0.84
+Pillow==11.1.0
+supervision==0.25.1
+ultralytics==8.3.80
+yolov5==7.0.14
