@@ -42,8 +42,12 @@ def cover_faces(image_path):
         x1, y1, x2, y2 = detections.xyxy[i]
         x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)
 
+        snip = img[y1:y2, x1:x2] 
+        blurred_snip = cv2.GaussianBlur(snip, (51, 51), 0)
+        img[y1:y2, x1:x2] = blurred_snip
+
         # Draw filled rectangle over the face
-        cv2.rectangle(img, (x1, y1), (x2, y2), color, thickness)
+        #cv2.rectangle(img, (x1, y1), (x2, y2), color, thickness)
 
     # Display image with covered faces
     try:
@@ -54,8 +58,8 @@ def cover_faces(image_path):
         print(f"Displaying images is not supported in this environment: {e}")
 
     # Save the modified image as "edit_covered.jpg"
-    cv2.imwrite("../sample-results/face-result-3.jpg", img)
+    cv2.imwrite("../sample-results/blurred_face_2.jpg", img)
 
 # Example usage
-image_path = "../data/faces&&lot/pic3.jpg"  # Replace with your actual image path
+image_path = "../data/faces&&lot/pic2.jpg"  # Replace with your actual image path
 cover_faces(image_path)
