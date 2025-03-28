@@ -67,6 +67,7 @@ def cover_faces(image_path):
     # Save the modified image
     cv2.imwrite("../sample-results/blurred_face_3.jpg", img)
 
-image_path = "../data/faces&&lot/pic3.jpg" 
-cover_faces(image_path)
 
+def main_blurfaces1():
+    image_path = "/home/smartparking/Downloads/SmartParking/image.jpg" 
+    cover_faces(image_path)

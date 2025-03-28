@@ -51,7 +51,7 @@ def model_run(path):
     # save new
     cv2.imwrite('../sample-results/blurred_plate_3.jpg', img)
 
-model_run('../data/CNR-EXT_FULL_IMAGE_1000x750/FULL_IMAGE_1000x750/OVERCAST/2015-11-16/camera7/2015-11-16_1117.jpg')
+def main_blurplates():
+    model_run('../data/CNR-EXT_FULL_IMAGE_1000x750/FULL_IMAGE_1000x750/OVERCAST/2015-11-16/camera7/2015-11-16_1117.jpg')
 
 #data/CNR-EXT_FULL_IMAGE_1000x750/FULL_IMAGE_1000x750/OVERCAST/2015-11-16/camera2/2015-11-16_0944.jpg
-
