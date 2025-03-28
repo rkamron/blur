@@ -3,6 +3,7 @@ import blur_faces1
 from blur_faces1 import main_blurfaces1
 from blur_plates import main_blurplates
 
+
 def main():
 	host = "0.0.0.0"
 	port = 12345

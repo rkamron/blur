@@ -2,6 +2,7 @@ import yolov5
 import numpy as np
 import cv2
 
+
 def model_run(path):
     model = yolov5.load('keremberke/yolov5n-license-plate')
 
